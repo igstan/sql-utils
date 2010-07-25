@@ -1,0 +1,3 @@
+This is a collection of MySQL utilities I gathered over time. Some of them are
+reusable, like `slug` or `transliterare`, while the others not, but serve as a
+good example for similar situations.

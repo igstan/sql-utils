@@ -1,0 +1,25 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `SELECT_EXCLUDE_FROM` $$
+CREATE PROCEDURE `SELECT_EXCLUDE_FROM`(IN exclude VARCHAR(64), IN table_name VARCHAR(64))
+BEGIN
+  DECLARE fields VARCHAR(1024);
+
+  SELECT
+    CONCAT('`', GROUP_CONCAT(`COLUMN_NAME` SEPARATOR '`, `'), '`')
+  INTO
+    fields
+  FROM `information_schema`.`COLUMNS`
+  WHERE `TABLE_NAME`   = table_name
+    AND `TABLE_SCHEMA` = SCHEMA()
+    AND `COLUMN_NAME` != exclude
+  GROUP BY `TABLE_NAME`, `TABLE_SCHEMA`;
+
+  SET @query = CONCAT("SELECT ", fields ," FROM ", table_name);
+
+  PREPARE query FROM @query;
+  EXECUTE query;
+  DEALLOCATE PREPARE query;
+END $$
+
+DELIMITER ;
