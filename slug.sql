@@ -18,7 +18,7 @@ BEGIN
 
     -- Replace all latin based characters, with their standard latin variant.
     -- That means, diacritics will be stripped out, which is actually the
-    -- reason for the weird comparisson.
+    -- reason for the weird comparison.
     CASE TRUE
       WHEN letter = 'a' THEN SET letter = 'a';
       WHEN letter = 'b' THEN SET letter = 'b';
