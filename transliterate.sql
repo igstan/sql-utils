@@ -32,7 +32,7 @@ BEGIN
       WHEN letter = 'o' THEN SET letter = 'o';
       WHEN letter = 'p' THEN SET letter = 'p';
       WHEN letter = 'q' THEN SET letter = 'q';
-      WHEN letter = 'r' THEN SET letter = 'w';
+      WHEN letter = 'r' THEN SET letter = 'r';
       WHEN letter = 's' THEN SET letter = 's';
       WHEN letter = 't' THEN SET letter = 't';
       WHEN letter = 'u' THEN SET letter = 'u';
