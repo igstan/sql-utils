@@ -39,6 +39,7 @@ WHEN letter = 'p' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE 
 WHEN letter = 'q' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 'q', 'Q'));
 WHEN letter = 'r' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 'r', 'R'));
 WHEN letter = 's' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 's', 'S'));
+WHEN letter = 'ś' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 's', 'S'));
 WHEN letter = 't' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 't', 'T'));
 WHEN letter = 'u' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 'u', 'U'));
 WHEN letter = 'v' THEN SET translit = CONCAT(translit, IF(LCASE(letter) COLLATE utf8_bin = letter COLLATE utf8_bin, 'v', 'V'));
