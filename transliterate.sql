@@ -1,10 +1,10 @@
 DELIMITER $$
 
 DROP FUNCTION IF EXISTS `transliterate` $$
-CREATE FUNCTION `transliterate` (original VARCHAR(128)) RETURNS VARCHAR(128)
+CREATE FUNCTION `transliterate` (original VARCHAR(512)) RETURNS VARCHAR(512)
 BEGIN
 
-  DECLARE translit VARCHAR(128) DEFAULT '';
+  DECLARE translit VARCHAR(512) DEFAULT '';
   DECLARE len      INT(3)       DEFAULT 0;
   DECLARE pos      INT(3)       DEFAULT 1;
   DECLARE letter   CHAR(1);
