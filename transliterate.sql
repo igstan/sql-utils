@@ -49,7 +49,7 @@ BEGIN
     END CASE;
 
     -- CONCAT seems to ignore the whitespace character. As a workaround we use
-    -- CONCAT_WS which a whitespace separator when the letter is a whitespace.
+    -- CONCAT_WS with a whitespace separator when the letter is a whitespace.
     SET translit = CONCAT_WS(IF(letter = ' ', ' ', ''), translit, letter);
     SET pos = pos + 1;
   END WHILE;
