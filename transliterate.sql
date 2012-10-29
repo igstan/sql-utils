@@ -29,6 +29,7 @@ BEGIN
       WHEN letter = 'j' THEN SET letter = IF(is_lower, 'j', 'J');
       WHEN letter = 'k' THEN SET letter = IF(is_lower, 'k', 'K');
       WHEN letter = 'l' THEN SET letter = IF(is_lower, 'l', 'L');
+      WHEN letter = 'ł' THEN SET letter = IF(is_lower, 'l', 'L');
       WHEN letter = 'm' THEN SET letter = IF(is_lower, 'm', 'M');
       WHEN letter = 'n' THEN SET letter = IF(is_lower, 'n', 'N');
       WHEN letter = 'o' THEN SET letter = IF(is_lower, 'o', 'O');

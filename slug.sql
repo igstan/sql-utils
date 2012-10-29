@@ -32,6 +32,7 @@ BEGIN
       WHEN letter = 'j' THEN SET letter = 'j';
       WHEN letter = 'k' THEN SET letter = 'k';
       WHEN letter = 'l' THEN SET letter = 'l';
+      WHEN letter = 'ł' THEN SET letter = 'l';
       WHEN letter = 'm' THEN SET letter = 'm';
       WHEN letter = 'n' THEN SET letter = 'n';
       WHEN letter = 'o' THEN SET letter = 'o';
