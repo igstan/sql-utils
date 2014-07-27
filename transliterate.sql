@@ -20,8 +20,11 @@ BEGIN
       WHEN letter = 'a' THEN SET letter = IF(is_lower, 'a', 'A');
       WHEN letter = 'b' THEN SET letter = IF(is_lower, 'b', 'B');
       WHEN letter = 'c' THEN SET letter = IF(is_lower, 'c', 'C');
+      WHEN letter = 'č' THEN SET letter = IF(is_lower, 'c', 'C');
       WHEN letter = 'd' THEN SET letter = IF(is_lower, 'd', 'D');
+      WHEN letter = 'ď' THEN SET letter = IF(is_lower, 'd', 'D');
       WHEN letter = 'e' THEN SET letter = IF(is_lower, 'e', 'E');
+      WHEN letter = 'ě' THEN SET letter = IF(is_lower, 'e', 'E');
       WHEN letter = 'f' THEN SET letter = IF(is_lower, 'f', 'F');
       WHEN letter = 'g' THEN SET letter = IF(is_lower, 'g', 'G');
       WHEN letter = 'h' THEN SET letter = IF(is_lower, 'h', 'H');
@@ -32,18 +35,23 @@ BEGIN
       WHEN letter = 'ł' THEN SET letter = IF(is_lower, 'l', 'L');
       WHEN letter = 'm' THEN SET letter = IF(is_lower, 'm', 'M');
       WHEN letter = 'n' THEN SET letter = IF(is_lower, 'n', 'N');
+      WHEN letter = 'ň' THEN SET letter = IF(is_lower, 'n', 'N');
       WHEN letter = 'o' THEN SET letter = IF(is_lower, 'o', 'O');
       WHEN letter = 'p' THEN SET letter = IF(is_lower, 'p', 'P');
       WHEN letter = 'q' THEN SET letter = IF(is_lower, 'q', 'Q');
       WHEN letter = 'r' THEN SET letter = IF(is_lower, 'r', 'R');
+      WHEN letter = 'ř' THEN SET letter = IF(is_lower, 'r', 'R');
       WHEN letter = 's' THEN SET letter = IF(is_lower, 's', 'S');
+      WHEN letter = 'š' THEN SET letter = IF(is_lower, 's', 'S');
       WHEN letter = 't' THEN SET letter = IF(is_lower, 't', 'T');
+      WHEN letter = 'ť' THEN SET letter = IF(is_lower, 't', 'T');
       WHEN letter = 'u' THEN SET letter = IF(is_lower, 'u', 'U');
       WHEN letter = 'v' THEN SET letter = IF(is_lower, 'v', 'V');
       WHEN letter = 'w' THEN SET letter = IF(is_lower, 'w', 'W');
       WHEN letter = 'x' THEN SET letter = IF(is_lower, 'x', 'X');
       WHEN letter = 'y' THEN SET letter = IF(is_lower, 'y', 'Y');
       WHEN letter = 'z' THEN SET letter = IF(is_lower, 'z', 'Z');
+      WHEN letter = 'ž' THEN SET letter = IF(is_lower, 'z', 'Z');
       ELSE
         SET letter = letter;
     END CASE;
